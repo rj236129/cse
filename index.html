@@ -6,8 +6,7 @@
     <title>Google Custom Search</title>
     
     <!-- Google CSE Script -->
-    <script async src="
-https://cse.google.com/cse.js?cx=07cad105f6ef24529"></script>
+    <script async src="https://cse.google.com/cse.js?cx=07cad105f6ef24529"></script>
 
     <style>
         /* Basic Page Styling */
@@ -18,10 +17,12 @@ https://cse.google.com/cse.js?cx=07cad105f6ef24529"></script>
             text-align: center;
             padding: 20px;
             margin: 0;
+            box-sizing: border-box;
         }
 
         h1 {
             color: #4CAF50;
+            margin-bottom: 20px;
         }
 
         /* Search Box Styling */
@@ -38,9 +39,22 @@ https://cse.google.com/cse.js?cx=07cad105f6ef24529"></script>
             background: #fff;
             border-radius: 5px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
+            width: 100%;
+            max-width: 100%;
             margin-left: auto;
             margin-right: auto;
+            box-sizing: border-box;
+        }
+
+        /* Responsive Styling for Small Screens */
+        @media (max-width: 768px) {
+            .gcse-searchbox {
+                max-width: 100%;
+            }
+
+            .gcse-searchresults {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
